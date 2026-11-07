@@ -85,6 +85,7 @@ from the original site (`idx=6e2d31e`). The Listings page search form is a crite
 - Gallery grouped by property (new SOP rule): Wade Road (3), Kauneonga Lake (1), Youngsville (5), More from Pursuit of Happiness (stock + flyer), each under its own heading with a short note.
 - Link check (Nov 7): every internal file exists, #contact anchor present, MLS IDX links 200, Facebook 200 (login redirect is normal logged-out behavior), YouTube embed 200, Google Maps 200 with a browser user agent (403 to bare curl is bot-blocking, not a broken link).
 - SOP: ad-landing-page-sop.md Sections 5 (photo grouping), 7 (QA gate), 10 (run sheet), 11 (standing balance rule) updated; Drive copy synced in place and verified byte-identical Nov 7.
+- QA round 2 (Nov 7) found two more defects, fixed same day: the gallery flyer tile cropped the website line (fixed with a `figure.fit` no-crop rule) and two card titles still orphaned (balance guard extended to h3, .card-title, figcaption). Phone-width balance verified by width simulation with DejaVu proxies (card titles 2/4, 4/3, 3/3; h1 4 lines ending "Upstate New York."), not a real phone render.
 
 ## Re-verification (2026-09-22)
 - All six pages present; all `src=` references resolve to existing files (no broken images).
