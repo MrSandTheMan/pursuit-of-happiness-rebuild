@@ -75,9 +75,16 @@ from the original site (`idx=6e2d31e`). The Listings page search form is a crite
 ## Update (2026-11-07) — Elliott's photos
 - Elliott emailed 5 photos on Nov 4, 2026 ("Okay", elliottpursuit@gmail.com, "I'll send a few pictures now and later"). Originals saved in `elliott-photos/` (image0-4.jpeg, 640x480).
 - All 5 show the same wooded property (dark siding, red trim, deck, fire pit, red barn). Elliott did not label them. Placed on the Youngsville listing ("3 Houses on 4 Acres", $319,000) as the only multi-structure property in the build; the Bethel Woods land parcel and 109 So. Main placeholders are untouched. If Elliott meant them for another listing, move them.
-- Rotation: image2, image3, image4 arrived sideways; rotated 90 degrees clockwise and verified upright.
+- Rotation: image2, image3, image4 arrived sideways; rotated 90 degrees clockwise and verified upright. image0 (barn) also arrived sideways but was missed on the first pass; visual QA caught it, rotated 90 degrees clockwise and re-uploaded.
 - Files in `rebuild/assets/`: `youngsville-house.jpg` (image1, main house front, used on the homepage card), `youngsville-cabin.jpg` (image4), `youngsville-barn.jpg` (image0), `youngsville-deck.jpg` (image2), `youngsville-deck2.jpg` (image3). All 5 also added to `gallery.html`.
 - Published to GitHub Pages: https://mrsandtheman.github.io/pursuit-of-happiness-rebuild/ (repo MrSandTheMan/pursuit-of-happiness-rebuild). Preview only; production site untouched.
+
+## Update (2026-11-07, round 2) — text balance, grouping, links, flyer rotation
+- Flyer (assets/hero.jpg) was sideways: the hand-drawn flyer was scanned rotated 90 degrees, text running vertically. Rotated 90 degrees clockwise, trimmed the white scan margins (1600x2227 portrait to 1903x1549 landscape). All text now reads left to right. Original saved as `hero-original.jpg` in the project folder (not shipped).
+- Text balance (Socrates lesson, now a standing SOP rule): added `h1,h2,.lede{text-wrap:balance}` and `p{text-wrap:pretty}` to assets/styles.css. QA checks every heading/lede for the five-words-then-one-orphan pattern at desktop and phone width.
+- Gallery grouped by property (new SOP rule): Wade Road (3), Kauneonga Lake (1), Youngsville (5), More from Pursuit of Happiness (stock + flyer), each under its own heading with a short note.
+- Link check (Nov 7): every internal file exists, #contact anchor present, MLS IDX links 200, Facebook 200 (login redirect is normal logged-out behavior), YouTube embed 200, Google Maps 200 with a browser user agent (403 to bare curl is bot-blocking, not a broken link).
+- SOP: ad-landing-page-sop.md Sections 5 (photo grouping), 7 (QA gate), 10 (run sheet), 11 (standing balance rule) updated; Drive copy synced in place and verified byte-identical Nov 7.
 
 ## Re-verification (2026-09-22)
 - All six pages present; all `src=` references resolve to existing files (no broken images).
