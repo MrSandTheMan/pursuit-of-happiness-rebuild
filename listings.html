@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listings | Pursuit of Happiness Realty</title>
+<meta name="description" content="Browse featured listings and search the complete MLS with Pursuit of Happiness Realty — serving NYC, Sullivan and Ulster County.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Pursuit of Happiness Realty — home">
+      <span class="brand-mark">P</span>
+      <span class="brand-name">Pursuit of Happiness Realty<small>Liberty, NY</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="main-nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="listings.html" class="active">Listings</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="tips.html">Buyer &amp; Seller Tips</a>
+      <a href="new-listing.html">New Listing</a>
+      <a href="mls-search.html" class="nav-cta">Search the MLS</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">Featured listing</span>
+        <h1>Four bedrooms on Kauneonga Lake</h1>
+        <p class="lede">Four-bedroom, three-bathroom house in Kauneonga Lake, NY — <strong>sold for $370,000</strong>. Ask about our binder deposit discount on your next move.</p>
+      </div>
+      <div class="split" style="margin-top:48px">
+        <div>
+          <div class="card-img" style="border-radius:14px;box-shadow:var(--shadow)">
+            <span class="badge sold">Sold</span>
+            <img src="assets/scott-outside.jpg" alt="Sold four-bedroom house in Kauneonga Lake, NY, with new wooden deck" loading="eager" style="border-radius:14px">
+          </div>
+        </div>
+        <div>
+          <h2>Sold — $370,000</h2>
+          <p class="lede">A four-bedroom, three-bathroom home on Kauneonga Lake. Another happy closing for Pursuit of Happiness Realty.</p>
+          <ul>
+            <li><strong>4</strong> bedrooms · <strong>3</strong> bathrooms</li>
+            <li>Kauneonga Lake, Sullivan County, NY</li>
+            <li>Sold at <strong>$370,000</strong></li>
+          </ul>
+          <p style="margin-top:24px">
+            <a class="btn btn-primary" href="mls-search.html">Find Your Home</a>
+            <a class="btn btn-outline" href="tel:8454398888" style="margin-left:10px">Call Elliott</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--paper-deep)">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">Search the MLS</span>
+        <h2>Search thousands of live listings</h2>
+        <p class="lede">Set your criteria below — your search opens on the live OneKey MLS portal with current listings across the region.</p>
+      </div>
+      <form class="search-panel" id="mlsForm">
+        <div class="search-grid">
+          <div class="field"><label for="s-loc">Location</label><input id="s-loc" type="text" placeholder="City, town, or county"></div>
+          <div class="field"><label for="s-type">Property type</label>
+            <select id="s-type"><option>Any type</option><option>Single family</option><option>Multi-family</option><option>Condo / Co-op</option><option>Land</option><option>Commercial</option></select>
+          </div>
+          <div class="field"><label for="s-sort">Sort by</label>
+            <select id="s-sort"><option>Newest</option><option>Oldest</option><option>Price: low to high</option><option>Price: high to low</option><option>Bedrooms: low to high</option><option>Bedrooms: high to low</option></select>
+          </div>
+          <div class="field"><label for="s-beds">Bedrooms</label>
+            <select id="s-beds"><option>Any</option><option>1+</option><option>2+</option><option>3+</option><option>4+</option><option>5+</option><option>6+</option></select>
+          </div>
+          <div class="field"><label for="s-baths">Bathrooms</label>
+            <select id="s-baths"><option>Any</option><option>1+</option><option>2+</option><option>3+</option><option>4+</option></select>
+          </div>
+          <div class="field"><label for="s-min">Min price</label><input id="s-min" type="text" inputmode="numeric" placeholder="$"></div>
+          <div class="field"><label for="s-max">Max price</label><input id="s-max" type="text" inputmode="numeric" placeholder="$"></div>
+        </div>
+        <div class="center">
+          <a class="btn btn-primary" href="https://matrix.onekeymlsny.com/Matrix/Public/IDXSearch.aspx?count=1&amp;idx=6e2d31e&amp;pv=&amp;or=" target="_blank" rel="noopener">Search Now on the Live MLS</a>
+          <p class="hero-note" style="margin-top:16px">Search opens the OneKey MLS portal in a new tab, where you can apply these filters to live results.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Pursuit of Happiness Realty</h4>
+        <p>Agent Elliott · Liberty, NY<br>Serving NYC, Sullivan &amp; Ulster County</p>
+        <p><a href="tel:8454398888">845-439-8888</a><br><a href="mailto:elliottpursuit@gmail.com">elliottpursuit@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Listings</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="tips.html">Buyer &amp; Seller Tips</a></li>
+          <li><a href="new-listing.html">New Listing</a></li>
+          <li><a href="mls-search.html">Search the MLS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Listings</h4>
+        <ul>
+          <li><a href="https://matrix.onekeymlsny.com/Matrix/public/IDX.aspx?idx=6e2d31e" target="_blank" rel="noopener">Browse the MLS</a></li>
+          <li><a href="https://www.facebook.com/787438357967562" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright © 2026 Pursuit of Happiness Realty — All Rights Reserved.</span>
+      <span>Listing data via OneKey MLS.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
