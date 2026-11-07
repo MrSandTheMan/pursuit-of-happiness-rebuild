@@ -34,9 +34,10 @@ section{padding:72px 0}
 h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.18;color:var(--ink)}
 /* Text balance (Socrates lesson, Nov 2026): never let a heading break into
    five words on one line and a single orphan word on the next. Balance the
-   lines; let body copy wrap pretty. */
-h1,h2,.lede{text-wrap:balance}
-p{text-wrap:pretty}
+   lines; let body copy wrap pretty. Extended Nov 7, 2026: card titles and
+   h3 headings balance too, captions wrap pretty. */
+h1,h2,h3,.card-title,.lede{text-wrap:balance}
+p,figcaption{text-wrap:pretty}
 h1{font-size:clamp(34px,5.4vw,58px);letter-spacing:-.01em}
 h2{font-size:clamp(27px,3.6vw,40px);margin-bottom:14px}
 h3{font-size:22px;margin-bottom:8px}
@@ -185,6 +186,9 @@ form.contact-form{display:grid;gap:16px}
 .gallery-group .gallery-grid{margin-top:20px}
 .gallery-grid figure{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);background:var(--card)}
 .gallery-grid img{aspect-ratio:4/3;object-fit:cover;width:100%}
+/* A figure whose image must show whole (the flyer): no crop, the tile
+   grows to the image's own ratio so nothing is cut off. */
+.gallery-grid figure.fit img{aspect-ratio:auto;object-fit:contain;background:#fff}
 .gallery-grid figcaption{padding:12px 16px;font-size:14px;color:var(--ink-soft)}
 
 /* ---------- tips ---------- */
